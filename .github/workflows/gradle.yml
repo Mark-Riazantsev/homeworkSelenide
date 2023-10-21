@@ -1,6 +1,6 @@
 name: Java CI with Gradle
 
-on: [push, pull_request]
+on: [ push, pull_request ]
 
 jobs:
   build:
@@ -21,6 +21,6 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew test --info
         -Dselenide:
-          headless=true:
+          headless=true
         #  Для проектов на базе Selenide необходимо добавить параметр для запуска браузера
         #  в headless режиме -Dselenide.headless=true
